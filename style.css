@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f9ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #355c7d;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 18px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #d9efff;
+}
+.home {
+    min-height: 500px;
+
+    max-width: 1100px;
+    margin: auto;
+
+    padding: 60px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 40px;
+
+    background: #e8f4fc;
+}
+
+.home-text {
+    flex: 1;
+}
+
+.welcome {
+    color: #4f86a8;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.home-text h1 {
+    font-size: 45px;
+    color: #355c7d;
+    margin: 10px 0;
+}
+
+.home-text h3 {
+    color: #4f86a8;
+    margin-bottom: 15px;
+}
+
+.home-text p {
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+
+    background: #8ec5e8;
+    color: #355c7d;
+
+    text-decoration: none;
+
+    padding: 10px 20px;
+
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background: #c5e3f5;
+}
+.home-image {
+    flex: 1;
+    text-align: center;
+}
+
+.home-image img {
+    width: 400px;
+    height: 270px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    border: 5px solid white;
+}
+
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 25px;
+}
+
+.section-title {
+    text-align: center;
+
+    color: #355c7d;
+
+    font-size: 32px;
+
+    margin-bottom: 30px;
+}
+
+.section-title::after {
+    content: "";
+
+    display: block;
+
+    width: 60px;
+    height: 4px;
+
+    background: #8ec5e8;
+
+    margin: 10px auto;
+}
+
+
+.about-text {
+    max-width: 850px;
+
+    margin: 0 auto 20px;
+
+    text-align: center;
+}
+
+.course-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.course-card {
+    width: 280px;
+
+    padding: 25px;
+
+    background: #eef8ff;
+
+    border: 1px solid #c5e3f5;
+
+    border-radius: 8px;
+
+    text-align: center;
+}
+
+.course-card h3 {
+    color: #4f86a8;
+
+    margin-bottom: 10px;
+}
+
+.course-card:hover {
+    background: #d9efff;
+}
+
+#facilities {
+    background: white;
+}
+
+.facility-container {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+.facility {
+    width: 250px;
+
+    padding: 20px;
+
+    background: #eef8ff;
+
+    border-left: 5px solid #8ec5e8;
+
+    border-radius: 6px;
+}
+
+.facility h3 {
+    color: #4f86a8;
+
+    margin-bottom: 8px;
+}
+
+.event-container {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+.event-card {
+    width: 280px;
+
+    padding: 25px;
+
+    background: white;
+
+    border: 1px solid #c5e3f5;
+
+    border-radius: 8px;
+}
+
+.event-card h3 {
+    color: #4f86a8;
+
+    margin-bottom: 10px;
+}
+
+
+#contact {
+    background: #f4f9ff;
+}
+
+.contact-box {
+    max-width: 600px;
+
+    margin: auto;
+
+    padding: 30px;
+
+    background: #eef8ff;
+
+    border: 1px solid #c5e3f5;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.contact-box h3 {
+    color: #4f86a8;
+
+    margin-bottom: 15px;
+}
+
+.contact-box p {
+    margin: 10px;
+}
+
+
+footer {
+    background: #355c7d;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .home {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .home-text h1 {
+        font-size: 35px;
+    }
+
+    .home-image img {
+        width: 300px;
+        height: 220px;
+    }
+
+    .course-card,
+    .event-card {
+        width: 100%;
+    }
+
+}
